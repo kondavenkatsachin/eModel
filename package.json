@@ -1,0 +1,40 @@
+{
+  "name": "cypress-api-tutorial",
+  "version": "1.0.0",
+  "description": "Repository created in the article REST API Tests with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run --spec '**/*.spec.js'",
+    "cypress:run-qa": "./node_modules/.bin/cypress run --spec '**/*.spec.js' --env ENV='qa'",
+    "cypress:run-ui-qa-nh": ".\\node_modules\\.bin\\cypress run --spec 'cypress\\integration\\UI_tests\\login_test.spec.js' --env ENV=qa --headed",
+    "cypress:run-ui-qa": ".\\node_modules\\.bin\\cypress run --spec 'cypress\\integration\\UI_tests\\*.spec.js' --env ENV=qa",
+    "cypress:run-ui-stage-nh": ".\\node_modules\\.bin\\cypress run --spec 'cypress\\integration\\UI_tests\\*.spec.js' --env ENV=stage  --headed",
+    "cypress:run-ui-stage": "./node_modules/.bin/cypress run --spec 'cypress/integration/UI_tests/*.spec.js' --env ENV=stage",
+    "cypress:run-api": "./node_modules/.bin/cypress run --spec 'cypress/integration/API_tests/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "cypress": "^7.3.0",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^6.3.1",
+    "mochawesome-report-generator": "^5.2.0",
+    "mssql": "^7.3.0",
+    "pg": "^8.7.1"
+  }
+}
